@@ -3,8 +3,6 @@ import sys
 import time
 import shutil
 
-sys.stdout.flush()
-
 import logging
 
 logger = logging.getLogger(__file__)
@@ -62,11 +60,11 @@ certificate_name = {cert}
 if __name__ == "__main__":
     if len(sys.argv) < 4:
         print('Invalid args')
-        raise Exception('Use sign_file.py <sert name> <in file path> <out file path>')
+        raise Exception('Use sign_file.py <cert name> <in file path> <out file path>')
     cert_name = sys.argv[1]
     in_file = sys.argv[2]
     out_file = sys.argv[3]
-    print(sert_name)
+    print(cert_name)
     print(in_file)
     print(out_file)
 
